@@ -4,7 +4,7 @@ import * as ROUTES from '../../constants/routes'
 import { injectReducers } from '../../store/reducers'
 
 const getDashboardContainer = store =>
-  import(/* webpackChunkName: "news" */ './reducers')
+  import(/* webpackChunkName: "dashboard" */ './reducers')
     .then(module => injectReducers(store, module.default))
     .then(() => import(/* webpackChunkName: "dashboard" */ './containers/DashboardContainer'))
     .then(module => module.default)

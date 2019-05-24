@@ -16,33 +16,36 @@ const enhance = compose(
 
 const Dashboard = ({ cryptoTradingList, classes, ...props }) => {
   const list = JSON.parse(cryptoTradingList.data)
-  console.warn(list)
   return (
     <div>
-      <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
-          BTC
-        </Typography>
-        <Typography component="p">
-          {list.BTC.USD}$
-        </Typography>
-      </Paper>
-      <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
-          ETH
-        </Typography>
-        <Typography component="p">
-          {list.ETH.USD}$
-        </Typography>
-      </Paper>
-      <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
-          XRP
-        </Typography>
-        <Typography component="p">
-          {list.XRP.USD}$
-        </Typography>
-      </Paper>
+      {list && (
+        <div>
+          <Paper className={classes.root}>
+            <Typography variant="h5" component="h3">
+              BTC
+            </Typography>
+            <Typography component="p">
+              {list.BTC.USD}$
+            </Typography>
+          </Paper>
+          <Paper className={classes.root}>
+            <Typography variant="h5" component="h3">
+              ETH
+            </Typography>
+            <Typography component="p">
+              {list.ETH.USD}$
+            </Typography>
+          </Paper>
+          <Paper className={classes.root}>
+            <Typography variant="h5" component="h3">
+              XRP
+            </Typography>
+            <Typography component="p">
+              {list.XRP.USD}$
+            </Typography>
+          </Paper>
+        </div>
+      )}
     </div>
   )
 }
