@@ -51,7 +51,8 @@
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0",
     "rxjs": "^5.4.1",
-    "sprintf": "^0.1.5"
+    "sprintf": "^0.1.5",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.16.0",
