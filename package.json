@@ -99,7 +99,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "karma-webpack-with-fast-source-maps": "^1.10.2",
     "mocha": "^5.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "open-browser-webpack-plugin": "^0.0.5",
     "react-number-format": "^4.0.7",
     "redbox-react": "^1.6.0",
